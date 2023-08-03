@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS background shadow text</title>
+        <style>
+            #text1 {
+                text-shadow: 2px 2px 5px red;
+            }
+
+            #text2 {
+                background: rgba(0, 128, 0, 10%);
+            }
+
+            #text3 {
+                white-space: nowrap;
+                width: 200px;
+                border: 1px solid #000000;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="text1">Welcome to Newton School</h1>
+
+        <div id="text2">
+            <h1>10% opacity</h1>
+        </div>
+        <div id="text3">
+            This is some long text that will not fit in the box 
+        </div>
+    </body>
+</html>

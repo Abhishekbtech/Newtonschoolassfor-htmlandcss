@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selectors and Text Effect</title>
+        <style>
+            p.long-para {
+                width: 200px;
+                border: 1px solid;
+                white-space: nowrap;
+                /* Write your code here */
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            div::before{
+                content: "⬇️⬇️ HOVER ⬇️⬇️";
+            }
+
+            .long-para:hover {
+                overflow: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="long-para">
+                This is a loooooooooooooooooooong text! This will not fit in this box.
+            </p>
+        </div>
+    </body>
+</html>
